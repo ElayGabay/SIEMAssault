@@ -2,6 +2,10 @@
 
 SIEMAssault is a bash script designed to help you test the effectiveness of your SIEM (Security Information and Event Management) system and firewall configurations by simulating various cyber attacks. This tool allows you to assess your SOC (Security Operations Center) readiness by launching different types of attacks against your network.
 
+![image](https://github.com/ElayGabay/SIEMAssault/assets/140305198/a1c585d0-7218-446f-bc7f-3a32955f4d9e)
+
+
+
 ## Installation
 
 To use SIEMAssault, follow these steps:
